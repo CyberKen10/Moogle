@@ -10,7 +10,6 @@ Moogle! es una aplicación *totalmente original* cuyo propósito es buscar intel
 
 Es una aplicación web, desarrollada con tecnología .NET Core 6.0, específicamente usando Blazor como *framework* web para la interfaz gráfica, y en el lenguaje C#.
 Esta esta pensada para documentos en inglés.
-El programa tiene por defecto la siguiente dirección como predeterminada para la ubicación de la base de datos: D:/Proyecto/moogle-main/Content, si usted ubica el programa en otra carpeta usted tendrá que cambiar la dirección predeterminada en el constructor de la clase Documents.
 Para ejecutarlo solo te debes parar en la carpeta del proyecto y ejecutar en la terminal de Linux:
 
 ```bash
