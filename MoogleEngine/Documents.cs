@@ -25,7 +25,7 @@ public class Documents
 {
     List<List<string>> content = new List<List<string>>();
     int contador=0;
-    foreach(var document in Directory.GetFiles(Path.Join("..", "Content"))
+    foreach(var document in Directory.GetFiles(Path.Join("..", "Content")))
     {
         
         try
@@ -48,7 +48,7 @@ public class Documents
     {
         List<string> Names = new List<string>();
        
-        foreach(var document in Directory.GetFiles(Path.Join("..", "Content"))
+        foreach(var document in Directory.GetFiles(Path.Join("..", "Content")))
         {
             string name=Path.GetFileNameWithoutExtension(document);
             Names.Add(name);
