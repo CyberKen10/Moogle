@@ -4,8 +4,7 @@ using System.IO;
 namespace MoogleEngine;
 
 public class Documents
-{   
-    public string documentsPath;
+{  
     public List<string> FileName;
     public List<List<string>>Content;
     public List<List<string>> Words;
@@ -14,9 +13,8 @@ public class Documents
 
 
 
-    public Documents( string Path="D:/Proyecto/moogle-main/Content")//El constructor recibe una direccion y puse por defecto la mia
+    public Documents( )
     {
-        this.documentsPath=Path;
         this.FileName=GetName();
         this.Content=GetContent();
         this.Words=GetWords();
@@ -27,7 +25,7 @@ public class Documents
 {
     List<List<string>> content = new List<List<string>>();
     int contador=0;
-    foreach(var document in Directory.GetFiles(documentsPath))
+    foreach(var document in Directory.GetFiles(Path.Join("..", "Content"))
     {
         
         try
@@ -50,7 +48,7 @@ public class Documents
     {
         List<string> Names = new List<string>();
        
-        foreach(var document in Directory.GetFiles(documentsPath))
+        foreach(var document in Directory.GetFiles(Path.Join("..", "Content"))
         {
             string name=Path.GetFileNameWithoutExtension(document);
             Names.Add(name);
